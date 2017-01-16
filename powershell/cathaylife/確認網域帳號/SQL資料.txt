@@ -1,0 +1,30 @@
+人事資料檔
+Cxlsvr22
+
+人事資料檔
+[PMIS].[dbo].[WEB_BASIC]
+網域帳號
+[QAccount].[dbo].[wpid]
+網域帳號cxldom01
+[QAccount1].[dbo].[wpid]
+
+找尋單位代號
+select 'i'+a.cedvno as cedvnoid,a.*
+from(
+SELECT distinct cedvno,cedvnm
+  FROM [PMIS].[dbo].[WEB_BASIC]
+  where cedvno not like '[0-9]%') as a
+
+
+尋找網域帳號
+SELECT [wsid]
+      ,[ceempnm]
+      ,[cedvnm]
+      ,[domain]
+  FROM [QAccount].[dbo].[wpid]
+
+SELECT [wsid]
+      ,[ceempnm]
+      ,[cedvnm]
+      ,[domain]
+  FROM [QAccount].[dbo].[wpid]

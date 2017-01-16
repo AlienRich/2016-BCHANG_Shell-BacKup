@@ -1,0 +1,16 @@
+抓取AD Computer 全部資訊
+Get-ADComputer -Identity pc00001  -Properties *
+
+ 抓取最後登入時間
+Get-ADComputer -Filter * -Properties * | FT Name, LastLogonDate
+
+抓取停用的電腦
+Get-ADComputer -filter 'enabled -eq "False"'
+
+抓取停用的電腦且超過365天的
+$d = [DateTime]::Today.AddDays(-365)
+Get-ADComputer -SearchBase 'OU=old-pc,OU=device,dc=pegavision,dc=corpnet' -filter {(enabled -eq "False") -and (lastlogondate -le $d)} -properties cn,lastlogondate | Select -Exp Name
+
+刪除停用超過90天且停用PC
+$d = [DateTime]::Today.AddDays(-90)
+Get-ADComputer -SearchBase 'OU=old-pc,OU=device,dc=pegavision,dc=corpnet' -filter {(enabled -eq "False") -and (lastlogondate -le $d)} | remove-adcomputer 

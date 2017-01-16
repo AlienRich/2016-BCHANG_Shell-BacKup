@@ -1,0 +1,25 @@
+匯入AD模組
+Import-Module ActiveDirectory
+
+
+匯入Exchang 2013 模組
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri http://tcc-hq-cas01/PowerShell/ -Authentication Kerberos
+Import-PSSession $Session
+Remove-PSSession $Session
+
+
+
+匯入Exchang 2010 模組
+Add-PSSnapin Microsoft.Exchange.Management.PowerShell.E2010
+
+匯入Exchang 2007 模組
+Add-PSSnapin Microsoft.Exchange.Management.PowerShell.Admin
+
+匯入Hyper-V 模組
+Add-PSSnapin Microsoft.SystemCenter.VirtualMachineManager
+
+
+Add-PSSnapin Quest.Activeroles.ADManagement # Quest commandlets
+
+2013 Lync
+IMPORT-MODULE Lync

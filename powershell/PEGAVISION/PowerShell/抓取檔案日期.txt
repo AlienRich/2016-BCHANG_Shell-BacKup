@@ -1,0 +1,4 @@
+Get-ChildItem -Path "D:\Storage\localhost" -Force | Where-Object {$_.LastWriteTime -lt "2014-09-17"}
+
+lt 之前
+gt 之後

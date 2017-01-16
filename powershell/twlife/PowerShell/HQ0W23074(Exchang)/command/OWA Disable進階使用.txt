@@ -1,0 +1,2 @@
+[PS] C:\>Get-CASMailbox -resultsize 5000 | FT name,ActiveSyncEnabled,OWAEnabled,
+Identity >c:\123.txt

@@ -1,0 +1,1 @@
+Get-CASMailbox -Resultsize Unlimilted | where {$_.owaenabled -eq $TRUE} | FT displayname >c:\OwaUserList.txt

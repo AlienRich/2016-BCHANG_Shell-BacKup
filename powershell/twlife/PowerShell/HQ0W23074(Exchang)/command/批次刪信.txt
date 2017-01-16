@@ -1,0 +1,23 @@
+[PS] C:\>Get-Mailbox -Identity a02651 | Export-Mailbox -SenderKeywords "alice@twlife.com.tw" -StartDate "03/31/2011 20:00:00"
+Date "03/31/2011 20:20:00" –deletecontent
+
+刪除 a02651 
+senderdeywords <-- 寄件者
+-stardate 開始時間
+-enddate 結束時間
+
+在Exchange 2007 ?境下，如果想在批量?除?箱?据?中的制定主??件。可以?通?以下Powershell下命令?行?除。
+
+
+1.首先使用以下命令??行?除的???行授?
+       Get-Mailbox | Add-MailboxPermission -User administrator -AccessRights FullAccess
+
+2.使用以下命令?除某一特定主??件
+
+      Get-Mailbox | Export-Mailbox -SubjectKeywords "Subject Delete " –DeleteConent
+
+3.最后撤???行?除的??的授?
+
+     Get-Mailbox | Remove-MailboxPermission –User administrator –AccessRights FullAccess
+
+http://technet.microsoft.com/zh-cn/library/aa998579(EXCHG.140).aspx

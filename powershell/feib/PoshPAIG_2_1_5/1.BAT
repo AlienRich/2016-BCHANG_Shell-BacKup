@@ -1,0 +1,1 @@
+PowerShell.exe –STA "D:\個人資料\PowerShell\PoshPAIG_2_1_5\Start-PoshPAIG.ps1"

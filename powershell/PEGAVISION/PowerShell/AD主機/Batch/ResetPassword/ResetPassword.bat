@@ -1,0 +1,1 @@
+powershell -command "& {C:\Batch\ResetPassword\ResetPassword.ps1}"

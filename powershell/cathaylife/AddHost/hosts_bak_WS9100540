@@ -1,0 +1,179 @@
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+
+10.87.50.46 cxlcs1at
+
+127.0.0.1       localhost
+10.87.50.182    CXLSVR60
+10.87.48.206    emc emc.cathaylife.com.tw
+
+##### DR TEST Server
+192.168.100.51	cathaygdb2t
+10.87.50.96	cxlcs1ds
+192.168.100.46	cathaygtest
+192.168.100.52	cathaygwast
+192.168.100.54	cathaygdwt
+10.87.50.11	cxlfntp1
+10.87.50.5	cxlpt1bp
+10.87.50.153	cxlpt2as
+10.87.50.7	cxlpt2bp
+10.87.50.155	cxlpt3as
+10.87.50.10	cxlpt4bp
+
+##### DR PROD Server
+10.87.49.1	cathaygdb2
+10.87.49.3	cxldw3fp
+192.168.100.33	cathaygtsm
+10.87.48.41     cathaygtsm1
+192.168.100.49	cathaygtsm2
+202.154.204.40	IBM4
+10.87.48.47	cxlpt1dp
+10.87.49.55	cxlpt2cp
+10.87.49.56	cxlpt2dp
+10.87.48.15	cxlpt3ap
+10.87.48.57	cxlpt4cp
+10.87.49.60	cxlpt5ap
+10.87.49.59	cxlpt5bp
+10.87.49.62	cfhpt5dp
+202.154.204.220	cxlpt7bp
+10.87.48.65	cxlpt8ap
+10.87.48.66	cxlpt8bp
+10.87.48.67	cxlpt9ap
+202.154.204.1	cxldns03
+
+#####上課用 Server#####
+10.87.50.15     db2recovery
+
+##### Windows Server #####
+10.87.50.113    cfhsvr11
+10.87.50.114    cfhsvr12
+10.87.50.115    cfhsvr13
+10.87.50.116    cfhsvr14
+10.87.50.117    cfhsvr15
+10.87.50.122    cfhsvr22
+10.87.48.123    cfhsvr23
+10.87.48.124    cfhsvr24
+10.87.48.125    cfhsvr25
+10.87.48.126    cfhsvr26
+10.87.48.127    cfhsvr27
+10.87.48.128    cfhsvr28
+202.154.204.218 cxlpt6ap
+
+##### WAS Server #####
+10.87.48.88     cathaygwas4
+10.87.48.46     cathaygwas5
+10.87.48.6      cathaygwas6
+202.154.204.215 cathaygweb1
+202.154.204.216 cathaygweb2
+
+10.87.49.3      CXLDW3DP
+10.87.49.5      CATHAYGBAT
+10.87.49.6	CATHAYGCTM
+10.87.50.111	CFHPT1CS
+10.87.50.112	CFHPT2CS
+10.87.48.111	CFHPT4EP
+10.87.48.112	CFHPT4FP
+10.87.49.61	CFHPT5CP
+202.154.204.226	CFHPT7EP
+202.154.204.228	CFHPT7FP
+10.87.50.81	CFHPT8AS
+10.87.50.52	CFHPT8AT
+10.87.50.82	CFHPT8BS
+10.87.50.84	CFHPT8CS
+10.87.50.85	CFHPT8DS
+10.87.50.86	CFHPT8ES
+10.87.50.87	CFHPT8FS
+10.87.49.11	CFHSVR01
+10.87.48.81	CXLFNAE1
+10.87.48.82	CXLFNAE2
+10.87.49.78	CXLFNPS1
+10.87.49.79	CXLFNPS2
+10.87.50.151	CXLPT1AS
+10.87.50.152	CXLPT1BS
+10.87.48.48	CXLPT1EP
+10.87.48.49	CXLPT1FP
+10.87.48.54	CXLPT1GP
+10.87.50.154	CXLPT2BS
+10.87.48.58	CXLPT4DP
+202.154.204.219	CXLPT6CP
+202.154.204.221	CXLPT7CP
+10.87.50.2	CXLFNTP2
+10.87.50.3	CXLFNTP3
+10.87.48.16	CXLFNPS3
+192.168.100.129	CXLSVR129
+192.168.102.228	CXLSVR130
+192.168.102.229	CXLSVR131
+192.168.100.164 NEWBATCH
+10.87.50.50     CXLPT6AT
+10.87.50.51     CXLPT7AT
+10.87.48.7      CATHAYGTEC
+10.87.50.76     CXLPT7ES
+10.87.50.66     CXLPT6ES
+10.87.50.77     CXLPT7FS
+10.87.50.67     CXLPT6FS
+10.87.49.7      CXLCS2DP
+
+10.87.50.46	cxlcs1at
+10.87.48.13	cxlcsitm
+10.87.50.91	cxlcs1as
+10.87.50.92	cxlcs2as
+10.87.50.93     cxlcs1bs
+
+##### CSR production #####
+
+10.87.49.1    cxlcs1dp
+10.87.48.43    cxlcs1ap
+10.87.48.2     cxlcs2ap
+10.87.48.45    cxlcs3ap
+10.87.48.42    cxlcs4ap
+10.87.48.46    cxlcs5ap
+10.87.48.6     cxlcs6ap
+10.87.48.72    cxlpt7ap
+10.87.48.88    cxlcs1bp
+
+202.154.204.215 cxlcs1wp
+202.154.204.216 cxlcs2wp
+
+10.87.50.16     cxlcs1bt
+
+10.87.50.80     swww.cathayrichone.com.tw
+
+10.87.50.212	cxlcs2dp_emc
+10.87.50.213	cxlcs2dp_rp
+192.168.103.92	cxltpc
+10.87.49.9	cxlcs4dp
+10.87.50.79	cxlcm1bs
+
+##### IM Server #####
+
+10.87.48.132    cxlim1ap
+10.87.48.133    cxlim2ap
+10.87.49.80	cxlim1dp
+10.87.50.8	cxlim1as
+10.87.50.41	cxlim1at
+
+10.87.50.171	cfhim1as
+10.87.50.170	cfhim1at
+##### 新建 #####
+10.87.50.199    cxlimxdt02
+10.87.48.61     cxlpt6bp
+192.168.9.9 cathaymail.linyuan.com.tw 

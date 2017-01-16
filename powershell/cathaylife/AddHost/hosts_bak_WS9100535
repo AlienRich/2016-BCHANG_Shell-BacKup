@@ -1,0 +1,86 @@
+# Copyright (c) 1993-1999 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+192.168.100.151		cxlmis
+127.0.0.1       	localhost
+10.87.50.155    	cxlpt3as
+192.168.100.54	    cathaygdwt
+10.87.49.3		    cxldw3fp
+10.87.49.4		    cxldw3gp
+10.87.49.3		    cathaygdw1
+10.87.49.2	        cxldw3ep
+10.87.49.1		    cathaygdb2
+#192.168.100.51     cathaygdb2t
+10.87.50.96         cxlcs1ds		#CSR Staging
+10.87.50.46         cxlcs1at		#CSR Testing
+10.164.48.3		    cxishtsm1
+10.87.50.76			cxlpt7es
+10.87.50.51			cxlpt7at
+10.87.49.6	    cathaygctm
+10.87.49.55		cxlpt2cp
+10.87.48.7			cathaygtec
+202.154.204.220	cxlpt7bp
+202.154.204.221	cxlpt7cp
+10.87.49.60		cxlpt5ap
+10.87.49.7		cxlcs2dp
+10.87.49.9		cxlcs4dp
+10.87.48.88		cathaygwas4
+10.87.48.43		cathaygwas1
+10.87.49.5      cathaygbat
+192.168.103.92	cxltpc
+10.87.50.66		cxlpt6es
+10.87.50.50		cxlpt6at
+88.8.210.21	sentinel
+10.87.49.80		cxlim1dp
+10.87.50.8		cxlim1as
+10.87.50.41		cxlim1at
+10.87.50.170	cfhim1at
+10.87.50.171	cfhim1as
+10.87.50.80     swww.cathayrichone.com.tw
+192.168.103.92	cxltpc
+10.87.50.212	cxlcs2dp_emc
+10.87.50.49	    cxldw3at
+10.87.48.41		cathaygtsm1
+10.87.49.11		cfhsvr01
+10.87.50.79		cxlcm1bs
+10.87.49.68		cxlfn1dp
+10.87.50.199	cxlimxdt02
+10.87.49.10		cxlimx1dp
+10.87.50.173	cxlimx1ds
+10.87.50.172	cxlimx1dt
+10.87.50.36		cxlfn1at
+
+#²£ÀI
+10.176.17.148	cxitp1dp	#CSR Prod DB
+10.176.18.169	cxitp1ds	#CSR Staging DB
+10.176.18.156	cxitp01d	#CSR Test DB
+10.176.2.153	cxitpctm	#Control-M Server
+10.176.15.212	cxitpa1at	#CSR New Test DB
+10.176.15.217	cxitpa1dp	#CSR New Prod DB
+
+#P8
+10.87.50.22		cxldw2dt	#boxdb testing
+10.87.50.23		cxldw1dt	#CRM DB testing
+10.87.49.93		cxldw2dp	#boxdb prod
+
+
+192.168.9.9 cathaymail.linyuan.com.tw 
+
+0.0.0.1	mssplus.mcafee.com
+
+0.0.0.1	mssplus.mcafee.com

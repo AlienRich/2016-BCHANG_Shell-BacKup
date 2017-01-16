@@ -1,0 +1,1 @@
+csvde -u -f "D:\exportADUser\cxlsna.txt" -d "dc=cxlsna,dc=cathaysna,dc=ins" -r "(objectcategory=person)" -l sAMAccountName,displayname,description,useraccountcontrol

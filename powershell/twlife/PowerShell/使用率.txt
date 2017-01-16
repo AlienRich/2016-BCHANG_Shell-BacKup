@@ -1,0 +1,35 @@
+# Lets import our list of computers
+$computers = get-Content .\computer-list.txt
+# computer-list.txt is your hostnames each on a new line
+
+# Lets create our variables
+$HostInfo = @()
+
+# Lets loop through our computer list from computers
+foreach ($computer in $computers) {
+    # Lets get our stats
+    # Lets create a re-usable WMI method for CPU stats
+    $ProcessorStats = Get-WmiObject win32_processor -computer $computer
+    $ComputerCpu = $ProcessorStats.LoadPercentage 
+    # Lets create a re-usable WMI method for memory stats
+    $OperatingSystem = Get-WmiObject win32_OperatingSystem -computer $computer
+    # Lets grab the free memory
+    $FreeMemory = $OperatingSystem.FreePhysicalMemory
+    # Lets grab the total memory
+    $TotalMemory = $OperatingSystem.TotalVisibleMemorySize
+    # Lets do some math for percent
+    $MemoryUsed = ($FreeMemory/ $TotalMemory) * 100
+    $PercentMemoryUsed = "{0:N2}" -f $MemoryUsed
+
+    # Lets throw them into an object for outputting
+    $objHostInfo = New-Object System.Object
+    $objHostInfo | Add-Member -MemberType NoteProperty -Name Name -Value $computer
+    $objHostInfo | Add-Member -MemberType NoteProperty -Name CPULoadPercent -Value $ComputerCpu
+    $objHostInfo | Add-Member -MemberType NoteProperty -Name MemoryUsedPercent -Value $PercentMemoryUsed
+
+    # Lets dump our info into an array
+    $HostInfo += $objHostInfo
+}
+
+# Lets output to the console
+$HostInfo

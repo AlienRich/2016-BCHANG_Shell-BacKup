@@ -1,0 +1,1 @@
+csvde -u -f "D:\exportADUser\cxldom09.txt" -d "dc=cxldom09,dc=com,dc=tw" -r "(objectcategory=person)" -l sAMAccountName,displayname,description,useraccountcontrol

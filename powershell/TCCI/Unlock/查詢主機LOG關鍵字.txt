@@ -1,0 +1,1 @@
+Get-EventLog Security -computer tccgroup-ht01 -EntryType FailureAudit  | Where {$_.message ¡Vmatch "yangzh"}

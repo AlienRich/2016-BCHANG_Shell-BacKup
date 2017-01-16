@@ -1,0 +1,1 @@
+Send-MailMessage -smtpserver hq0w23074 -to bchang@twlife.com.tw -from test@twlife.com.tw -Subject "mail test"  

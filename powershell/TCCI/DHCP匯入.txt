@@ -1,0 +1,5 @@
+用本機powershell ise匯入
+
+
+netsh dhcp server \\TCC-CADNS.taiwancement.com Scope 10.6.5.0 Add reservedip	10.6.5.201	24EC9993C05D "TC-HH9C152717H" 董事長	BOTH
+                    匯入Server Name                  ScopeName                  匯入IP          匯入MAC      匯入名稱         描述           

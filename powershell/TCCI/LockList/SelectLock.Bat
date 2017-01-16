@@ -1,0 +1,1 @@
+powershell -command "& {C:\Batch\LockList\SelectLock.ps1}"

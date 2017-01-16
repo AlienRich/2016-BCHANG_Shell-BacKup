@@ -1,0 +1,73 @@
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+
+#B2E
+#202.154.204.38	w3.cathaylife.com.tw
+10.87.48.47	cxlpt1dp.cathaylife.com.tw
+10.87.48.48	cxlpt1ep.cathaylife.com.tw
+10.87.48.49	cxlpt1fp.cathaylife.com.tw
+10.87.48.54	cxlpt1gp.cathaylife.com.tw
+
+10.87.50.141	swww.cathaylife.com.tw
+
+10.87.49.55	cxlpt2cp
+10.87.49.56	cxlpt2dp
+
+10.87.48.76	cxlpt8ap
+
+10.87.50.66	cxlpt6es
+10.87.50.67	cxlpt6fs
+
+10.87.50.50	cxlpt6at
+
+#new B2E
+10.87.50.238	cxlpt1ad
+10.87.50.239	cxlpt1at
+10.87.50.222	cxlpt1ds
+10.87.50.223	cxlpt2ds
+
+#B2C
+10.87.49.60	cxlpt5ap
+10.87.49.59	cxlpt5bp
+
+10.87.50.74	cxlpt7cs
+10.87.50.76	cxlpt7es
+10.87.50.77	cxlpt7fs
+
+10.87.50.51	cxlpt7at
+
+10.87.49.5	cathaygbat
+10.87.49.6	cathaygctm
+
+#CRM
+10.87.49.2	cxldw3ep
+10.87.49.3	cxldw3fp
+10.87.49.4	cxldw3gp
+
+#CSR
+10.87.49.1	cxlcs1dp
+10.87.50.46	cxlcs1at
+10.87.50.96	cxlcs1ds
+10.87.50.93	cxlcs1bs
+10.87.50.79	cxlcm1bs
+
+192.168.9.9 cathaymail.linyuan.com.tw 

@@ -1,0 +1,110 @@
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+
+10.180.104.252	www.2brightsparks.com
+10.180.104.252	*.2brightsparks.com
+10.180.104.252	2brightsparks.com
+
+10.180.104.252	www.zabkat.com
+10.180.104.252	*.zabkat.com
+10.180.104.252	zabkat.com
+
+10.180.104.252       www.mindjet.com
+10.180.104.252       *.mindjet.com
+10.180.104.252       mindjet.com
+
+10.87.49.84     cxlcs1dp_boot
+10.87.49.1	cxlcs1dp
+10.87.49.85     cxlcs2dp_boot
+10.87.49.7      cxlcs2dp
+10.87.49.8      cxlcs3dp
+10.87.49.9      cxlcs4dp
+10.87.48.87	cxlcs1ap
+10.87.48.2      cxlcs2ap
+10.87.48.45     cxlcs3ap
+10.87.48.42     cxlcs4ap
+10.87.48.46     cxlcs5ap
+10.87.48.6      cxlcs6ap
+10.87.48.40	cxlcs7ap
+10.87.48.88     cxlcs1bp
+202.154.204.215 cxlcs1wp
+202.154.204.216 cxlcs2wp
+
+10.87.50.96     cxlcs1ds
+10.87.50.91     cxlcs1as
+10.87.50.92     cxlcs2as
+10.87.50.93     cxlcs1bs
+10.87.50.46     cxlcs1at
+10.87.50.16     cxlcs1bt
+
+10.87.49.3      cathaygdw
+192.168.100.33  cathaygtsm
+192.168.100.55  cathaygdwt
+
+10.87.50.155    cxlpt3as
+10.87.48.10	cxlpt4bp
+10.87.49.55	cxlpt2cp
+10.87.49.60     cxlpt5ap
+
+10.87.48.7  cathaygtec
+# 192.168.100.41  cathaygtsm1
+10.87.48.41      cathaygtsm1
+192.168.100.49  cathaygtsm2
+
+10.87.50.11     cxlfntp1
+10.87.50.2      cxlfntp2
+10.87.50.3      cxlfntp3
+10.87.48.81     cxlfnae1
+10.87.48.82     cxlfnae2
+10.87.48.83     cxlfnce1
+10.87.48.84     cxlfnce2
+10.87.49.78     cxlfnps1
+10.87.49.79     cxlfnps2
+
+10.87.49.68     cxlfn1dp
+10.87.49.69     cxlfn2dp
+10.87.49.63     cxlfn1ap_boot
+10.87.48.84     cxlfn1ap
+10.87.49.64     cxlfn2ap_boot
+10.87.48.85     cxlfn2ap
+
+10.87.50.36     cxlfn1at
+10.87.50.37     cxlfn1ds
+10.87.50.38     cxlfn1as
+10.87.50.39     cxlfn2as
+
+10.87.49.11     cfhsvr01
+
+10.87.50.4      cxlvn04
+
+10.87.49.6      cathaygctm
+10.87.49.5	cathaygbat
+#10.87.50.41     cxish01
+10.87.48.13	cxlcsitm
+
+10.87.50.8      cxlim1as
+10.87.48.132    cxlim1ap
+10.87.48.133    cxlim2ap
+202.154.204.68  cxlim1wp
+202.154.204.69  cxlim2wp
+10.87.49.80     cxlim1dp
+10.87.50.41     cxlim1at

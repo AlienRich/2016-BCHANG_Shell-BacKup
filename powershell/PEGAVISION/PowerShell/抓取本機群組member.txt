@@ -1,0 +1,5 @@
+net localgroup "pegacloud user"
+
+get-adgroupmember -Identity administrators
+
+(GET-ADUSER p1030201 ¡VProperties MemberOf | Select-Object MemberOf).MemberOf >> c:\1.txt

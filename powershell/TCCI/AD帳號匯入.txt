@@ -1,0 +1,1 @@
+dsadd user cn=test00,OU=??台泥水泥有限公司,OU=NTCC,DC=taiwancement,DC=com -disabled no -upn test00@taiwancement.com -fn "(test)" -ln "test" -display "test(test)" -pwd "Tcci=2015" -company "??台泥水泥有限公司" -dept "供?"  -tel "0935581164" -title "攻讀"

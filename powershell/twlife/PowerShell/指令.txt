@@ -1,0 +1,18 @@
+$xxxx=Get-credential <取得帳號密碼
+
+Set-ExecutionPolicy Unrestricted <提升全縣可執行PS1
+
+Get-Content <取得檔案內容
+get-childitem e:\ -include *.txt -recurse <抓取e:\底下的所有txt
+
+Get-ChildItem | Where-Object {$_.LastWriteTime -gt (Get-Date).AddDays(-3)} | Remove-Item -WhatIf
+
+
+以下命令查找 Program Files 文件?中上次修改日期晚于 2005 年 10 月 1 日并且既不
+小于 1 MB 也不大于 10 MB 的所有可?行文件(?????法?行-_-!)：
+
+Get-ChildItem -Path $env:ProgramFiles -Recurse -Include *.exe | Where-Object-FilterScript {($_.LastWriteTime -gt "2005-10-01") -and ($_.Length -ge 1m) `
+-and ($_.Length -le 10m)}
+
+抓取 C:\Program Files 底下TXT黨的絕對路徑
+Get-ChildItem -Path "C:\Program Files" -Include *.txt -Recurse | Select-Object FullName

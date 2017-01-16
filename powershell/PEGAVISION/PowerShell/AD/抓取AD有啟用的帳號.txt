@@ -1,0 +1,1 @@
+Get-ADUser -Filter {Enabled -eq $true} | Select-Object -Property SamAccountName,distinguishedname | export-csv c:\1.csv -encoding "unicode"

@@ -1,0 +1,82 @@
+# Copyright (c) 1993-1999 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+127.0.0.1       localhost
+10.87.49.1      cxlcs1dp
+10.87.49.7      cxlcs2dp
+10.87.49.5      cathaygbat
+10.87.49.6      cathaygctm
+10.87.49.7      cxlcs2dp
+10.87.49.8      cxlcs3dp
+10.87.49.11     cfhsvr01
+10.87.49.80     cxlim1dp
+10.87.48.28     cxlfn6sp
+10.87.48.88     cxlcs1bp
+10.87.48.87     cxlcs1ap
+10.87.48.2      cxlcs2ap
+10.87.48.45     cxlcs3ap
+10.87.48.130    cxlcs3ap_clone
+10.87.48.42     cxlcs4ap
+10.87.48.46     cxlcs5ap
+10.87.48.6      cxlcs6ap
+202.154.204.215 cxlcs1wp
+202.154.204.216 cxlcs2wp
+10.87.48.84     cxlfn1ap
+10.87.48.85     cxlfn2ap
+10.87.50.104 sim.cathaylife.com.tw
+10.87.50.103 tim.cathaylife.com.tw
+
+
+10.87.50.16     cxlcs1bt
+10.87.50.96     cxlcs1ds
+10.87.50.93     cxlcs1bs
+10.87.50.91     cxlcs1as
+10.87.50.92     cxlcs2as
+10.87.50.16     cxlcs1bt
+10.87.50.46     cxlcs1at
+10.87.50.145     cxlcs1at_hw
+
+10.87.50.8      cxlim1ds
+10.87.50.8      cxlim1as
+10.87.50.41     cxlim1at
+10.87.50.50     cxlpt6at
+10.87.50.79     cxlcm1bs
+10.87.50.36     cxlfn1at
+
+10.87.50.80     swww.cathayrichone.com.tw
+10.87.50.70     swww.cathaylife.com.tw
+
+10.160.48.1     cxlvn01p
+10.160.48.2     cxlvn02p
+10.160.49.1     cxlvn03p
+10.160.49.2     cxlvn04p
+10.160.49.3     cxlvn05p
+10.160.50.1     cxlvn06s
+10.160.68.1     cxlvn07p
+10.160.68.2     cxlvn08p
+10.160.48.9     cxlvn09p
+10.160.50.2     cxlim01s
+
+#10.87.50.230    tw3.cathaylife.com.tw\n
+10.87.50.145    test.cathaylife.com.tw
+10.87.50.158    cfhcsxas01
+
+10.87.48.47     cxlpt1dp cxlpt1dp.cathaylife.com.tw
+10.87.48.48     cxlpt1ep cxlpt1ep.cathaylife.com.tw
+10.87.48.49     cxlpt1fp cxlpt1fp.cathaylife.com.tw
+10.87.48.54     cxlpt1gp cxlpt1gp.cathaylife.com.tw

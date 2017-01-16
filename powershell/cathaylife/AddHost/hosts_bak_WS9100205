@@ -1,0 +1,162 @@
+# Copyright (c) 1993-1999 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+127.0.0.1       localhost
+
+######CSR test was
+10.87.50.91     cxlcs1as
+10.87.50.92     cxlcs2as
+10.87.50.93     cxlcs1bs
+10.87.50.46    cxlcs1at        cxlcs1at.cathaylife.com.tw
+10.87.50.16    cxlcs1bt
+202.154.204.182 cxlcs1wp
+202.154.204.183 cxlcs2wp
+#####im was #######
+10.87.50.41   cxish01
+10.87.50.8    cxlim1as 
+##### DR TEST Server
+192.168.100.51	cathaygdb2t
+192.168.100.46	cathaygtest  cathaygtest.cathaylife.com.tw
+192.168.100.52	cathaygwast
+192.168.100.54	cathaygdwt  cathaygdwt.cathaylife.com.tw
+10.87.50.11	cxlfntp1
+10.87.50.5	cxlpt1bp
+10.87.50.12	cxlpt4as cxlpt4as.cathaylife.com.tw
+10.87.50.151	cxlpt1as cxlpt1as.cathaylife.com.tw
+10.87.50.152	cxlpt1bs cxlpt1bs.cathaylife.com.tw
+10.87.50.153	cxlpt2as cxlpt2as.cathaylife.com.tw
+10.87.50.154	cxlpt2bs cxlpt2bs.cathaylife.com.tw
+10.87.50.7	cxlpt2bp
+10.87.50.155	cxlpt3as cxlpt3as.cathaylife.com.tw
+10.87.50.10	cxlpt4bp
+10.87.50.111 cfhpt1cs
+
+#####CSR-DR PROD Server
+10.87.48.43              cxlcs1ap
+10.87.48.2              cxlcs2ap   
+202.154.204.215         cxlcs1wp  cxlcs2ap.cathaylife.com.tw
+10.87.48.45              cxlcs3ap
+10.87.48.42              cxlcs4ap
+10.87.48.46              cxlcs5ap
+10.87.48.6              cxlcs6ap
+10.87.48.88                cxlcs1bp
+
+10.87.49.1	cathaygdb2
+
+192.168.100.31	cathaygdw
+192.168.100.33	cathaygtsm
+202.154.204.40	cathaygwas
+10.87.48.47	cxlpt1dp cxlpt1dp.cathaylife.com.tw
+10.87.48.48 cxlpt1ep cxlpt1ep.cathaylife.com.tw
+10.87.48.49	cxlpt1fp cxlpt1fp.cathaylife.com.tw
+10.87.48.54	cxlpt1gp cxlpt1gp.cathaylife.com.tw
+10.87.49.55	cxlpt2cp
+10.87.49.56	cxlpt2dp
+10.87.48.7                 cathaygtec
+10.87.48.8	                cxlpt3ap
+10.87.48.57	cxlpt4cp
+10.87.49.60	cxlpt5ap
+10.87.49.59	cxlpt5bp
+10.87.49.61	cxlpt5cp
+10.87.49.62	cxlpt5dp
+10.87.49.7                   cxlcs2dp
+202.154.204.233 cxlpt6ap
+202.154.204.225 w3.cathaylife.com.tw 
+202.154.204.218 cxlpt6bp cxlpt6bp.cathaylife.com.tw
+202.154.204.219	cxlpt6cp cxlpt6cp.cathaylife.com.tw
+202.154.204.220 cxlpt7bp www.cathaylife.com.tw
+202.154.204.221	cxlpt7cp www.cathaylife.com.tw
+10.87.48.65	cxlpt8ap cxlpt8ap.cathaylife.com.tw
+10.87.48.66	cxlpt8bp
+10.87.48.67	cxlpt9ap
+202.154.204.1	cxldns03
+192.168.100.49	cathaygtsm2
+
+#######cxlfn1at########
+10.87.50.111 cfhpt1as
+10.87.50.114 cfhsvr12
+10.87.50.115 cfhsvr13
+10.87.50.116 cfhsvr14
+10.87.50.117 cfhsvr15
+10.87.48.68 cxlpt9bp
+10.87.50.112 cxlpt2cs
+10.87.49.61 cfhpt5cp
+10.87.48.13  cxlcsitm
+10.87.50.36  cxlfn1at
+############SSO##############
+10.87.48.122 Cfhsvr22
+10.87.48.123 Cfhsvr23
+10.87.48.124 Cfhsvr24
+10.87.48.125 Cfhsvr25
+10.87.48.126 Cfhsvr26
+10.87.48.127 Cfhsvr27
+10.87.48.128 Cfhsvr28
+
+##########CRO FTP############
+10.87.48.122 cfhsvr22
+10.87.50.113 cfhsvr11
+
+##########CRO WEB############ 
+202.154.204.11 cfhsvr29
+202.154.204.12 cfhsvr30
+10.87.50.118 cfhsvr16
+10.87.48.111 cfhpt4ep
+10.87.48.112 cfhpt4fp
+
+#############CSR#############
+192.168.102.228 cxlsvr130
+192.168.102.229 cxlsvr131
+192.168.100.141 cxlsvr141
+10.87.48.83 cxlfnce1
+
+##########b2e##############
+10.87.50.50 cxlpt6at
+#########WINDOWS#############
+192.168.100.207 cxlpt01d
+
+###########CRM###############
+#202.154.204.29  svrqry12        crm.cathaylife.com.tw   
+#202.154.204.20  svrqry11        crm.cathaylife.com.tw 
+#202.154.204.18  svrqry10        crm.cathaylife.com.tw 
+#202.154.204.30  svrqry13        crm.cathaylife.com.tw 
+#202.154.204.236 svrqry14        crm.cathaylife.com.tw 
+#202.154.204.237 svrqry15        crm.cathaylife.com.tw 
+#202.154.204.205 svrqry16        crm.cathaylife.com.tw 
+#202.154.204.207 svrqry17        crm.cathaylife.com.tw
+
+########filenet###################
+10.87.50.43    cxlfn2ss
+10.87.48.81    cxlfnae1
+10.87.50.36    cxlfn1at
+10.87.50.38    cxlfn1as
+10.87.50.37    cxlfn1ds
+10.87.48.84    cxlfn1ap
+10.87.48.85    cxlfn2ap
+10.87.49.68    cxlfn1dp
+10.87.49.69    cxlfn2dp
+
+###########TEST-CRM###############
+202.154.204.194  svrqry74.cathaylife.com.tw   
+########BIG5-UTF8TEST#######################
+#10.87.50.5     cxlpt7at  twww.cathaylife.com.tw cxlpt7at.cathaylife.com.tw
+10.87.50.80     swww.cathayrichone.com.tw
+
+ 
+
+
+192.168.9.9 cathaymail.linyuan.com.tw 

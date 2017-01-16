@@ -1,0 +1,2 @@
+command <--執行本機帳號
+command1 <--執行domain administrator (先停用)如要開啟只需將command.ps1內的out-file 檔名修改即可

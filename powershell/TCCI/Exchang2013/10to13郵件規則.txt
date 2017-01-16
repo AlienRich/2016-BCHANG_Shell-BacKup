@@ -1,0 +1,12 @@
+$DC = "tccgroup-hqad"
+$SourceName = "tcc-tpe-ht01\Mail Open Relay"
+$TargetName = "Mail Open Relay-tcc-hq-cas02"
+$TargetServer = "tcc-hq-cas02"
+
+$MSG = "Migrate ReceiveConnector - " + $SourceName
+echo $MSG
+
+$SourceReceiveConnector = Get-ReceiveConnector -Identity $SourceName -DomainController $DC
+
+
+New-ReceiveConnector -Name $TargetName -Usage Custom -Bindings 0.0.0.0:25 -RemoteIPRanges $SourceReceiveConnector.RemoteIPRanges -PermissionGroups $SourceReceiveConnector.PermissionGroups -ConnectionInactivityTimeout $SourceReceiveConnector.ConnectionInactivityTimeout -MaxInboundConnection $SourceReceiveConnector.MaxInboundConnection -MaxInboundConnectionPerSource $SourceReceiveConnector.MaxInboundConnectionPerSource -MaxInboundConnectionPercentagePerSource $SourceReceiveConnector.MaxInboundConnectionPercentagePerSource -MaxMessageSize $SourceReceiveConnector.MaxMessageSize -AuthMechanism $SourceReceiveConnector.AuthMechanism -TarpitInterval $SourceReceiveConnector.TarpitInterval -MaxAcknowledgementDelay $SourceReceiveConnector.MaxAcknowledgementDelay -server $TargetServer -DomainController $DC

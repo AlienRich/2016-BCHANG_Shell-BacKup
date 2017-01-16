@@ -1,0 +1,7 @@
+get-mailbox -server hq0w23074 | Set-CASMailbox -OWAEnabled $false
+get-mailbox | Set-CASMailbox -ActiveSyncEnabled $false
+Get-Mailbox -OrganizationalUnit "通訊處內勤人員" | Set-CASMailbox -OWAEnabled $true
+
+-->針對某一台Server去Disable 在上面所有信箱的OWA
+-->針對所有信箱去Disable Pushmail
+-->針對AD上的某一個OU去啟用OWA

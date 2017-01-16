@@ -1,0 +1,27 @@
+$computers=(Get-Content computers.txt)
+$WARING='5000'
+$SMTP='smtp.example.com'
+$TO='mymail@hotmail.com'
+
+foreach ($computer in $computers)
+{
+    #$ICMP=get-wmiobject -query "select * from win32_pingstatus where address='$COMPUTER'"
+    $ICMP=get-WmiObject Win32_PingStatus -filter  "Address='$COMPUTER' "
+    if ($ICMP.StatusCode -eq '0')
+    {
+        Get-WmiObject -computer $COMPUTER win32_logicaldisk  |? {$_.drivetype -eq '3'}|%{        
+            if (([int32]($_.freespace/1MB)) -le "$WARING")
+            {
+            $ID=$_.deviceid 
+            $F=[int32]($_.freespace/1MB)
+            $S="Waring $computer disk $ID Freespace $F MB"
+            Send-MailMessage -to $TO -from diskmonitor@example.com -subject "$S"  -body "$S" -smtp $SMTP
+            }
+        }
+    }
+    else
+    {    
+        $N="Waring $computer not respond !"
+        Send-MailMessage -to $TO -from diskmonitor@example.com -subject "$N"  -body "$N" -smtp $SMTP
+    }
+}

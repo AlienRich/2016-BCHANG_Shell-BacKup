@@ -1,0 +1,1 @@
+Get-ReceiveConnector | Select Identity,@{Name='RemoteIPRanges';Expression={[string]::join("`n", ($_.RemoteIPRanges))}} | export-csv c:\csv\2.csv -notypeinfo

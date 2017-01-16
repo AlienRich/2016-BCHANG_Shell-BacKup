@@ -1,0 +1,1 @@
+Test-ReplicationHealth | ConvertTo-Html -title ¡§BackupReport CCR¡¨ -body ¡§Backup status per Storage Group¡¨ | Set-Content c:\CCRCheck.html

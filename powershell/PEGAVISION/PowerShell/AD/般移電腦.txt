@@ -1,0 +1,2 @@
+般移電腦由Computers 到對應的OU(電腦名稱PC開頭)
+Get-ADComputer -SearchBase 'CN=computers,dc=pegavision,dc=corpnet'  -Filter {name -like 'pc*'} | Move-ADObject -TargetPath 'OU=PC,OU=Device,dc=pegavision,dc=corpnet'

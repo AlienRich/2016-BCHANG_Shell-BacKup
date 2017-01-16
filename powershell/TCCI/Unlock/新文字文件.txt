@@ -1,0 +1,9 @@
+顯示該帳號Lock Out 狀態
+Get-ADUser -Identity bill.chang -Server tcc-hqad04 -Properties AccountLockoutTime,LastBadPasswordAttempt,BadPwdCount,LockedOut
+
+搜尋全部Lock Out 狀態
+Search-ADAccount -LockedOut
+
+單一帳號解鎖
+Get-ADUser -Identity bill.chang -Server tcc-hqad04 | Unlock-ADAccount
+

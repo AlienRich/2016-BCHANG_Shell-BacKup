@@ -1,0 +1,9 @@
+[PS] C:\>Get-MailboxStatistics -Server hq0w23074 | sort-object totalItemsize -descending| ft displayname,totalitemsize,itemcount | more
+
+more指令是顯示一頁就暫停
+
+後面加上> c:\log.txt 可以匯出
+
+Get-MailboxStatistics -server hq0w23076 | Where-Object {$_.DisconnectDate -eq $null -and $_.totalItemSize.Value.ToMB() -gt 250} | Sort-Object TotalItemSize -Descending | Select DisplayName,@{name="TotalItemSize(MB)";expression={$_.TotalItemSize.Value.ToMB()}},ItemCount
+
+大於250m的

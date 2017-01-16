@@ -1,0 +1,16 @@
+# Variablen
+$DateFormat = Get-Date -format yyyyMMdd-HH-mm
+$Logfile = "D:\Logs\wsus-bereinigung-$DateFormat.log"
+
+# WSUS Bereinigung durchfuhren
+Invoke-WsusServerCleanup -CleanupObsoleteUpdates -CleanupUnneededContentFiles -CompressUpdates -DeclineExpiredUpdates -DeclineSupersededUpdates | Out-File $Logfile
+
+# Mail Variablen
+$MailSMTPServer = "EX01.domain.local"
+$MailFrom = "administrator@domain.local"
+$MailTo = "edv@domain.local"
+$MailSubject = "${env:COMPUTERNAME} Bereinigung $DateFormat"
+$MailBody = Get-Content $Logfile | Out-String
+
+# Mail versenden
+Send-MailMessage -SmtpServer $MailSMTPServer -From $MailFrom -To $MailTo -subject $MailSubject -body $MailBody -Encoding Unicode

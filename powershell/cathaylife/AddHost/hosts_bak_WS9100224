@@ -1,0 +1,112 @@
+﻿# Copyright (c) 1993-1999 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+127.0.0.1       localhost
+#88.8.210.21	sentinel
+##### DR TEST Server
+10.87.50.96	cxlcs1ds
+10.87.50.46	cxlcs1at
+10.87.50.16	cxlcs1bt
+192.168.100.52	cathaygwast
+192.168.100.54	cathaygdwt
+10.87.50.11	cxlfntp1
+10.87.50.5	cxlpt1bp
+10.87.50.153	cxlpt2as
+10.87.50.7	cxlpt2bp
+10.87.50.155	cxlpt3as
+10.87.50.10	cxlpt4bp
+10.87.49.11	cfhsvr01
+##### DR PROD Server
+10.87.49.1	cxlcs1dp
+10.87.49.1 	cathaygdb2
+192.168.100.44	cathaygwas1
+202.154.204.13	cathaygwas2
+192.168.100.45	cathaygwas3
+10.87.49.3	cathaygdw
+192.168.100.33	cathaygtsm
+202.154.204.40	cathaygwas
+10.87.48.47	cxlpt1dp
+10.87.49.55	cxlpt2cp
+10.87.49.56	cxlpt2dp
+10.87.48.8	cxlpt3ap
+10.87.48.57	cxlpt4cp
+10.87.49.60	cxlpt5ap
+10.87.49.59	cxlpt5bp
+10.87.49.62	cxlpt5dp
+202.154.204.218	cxlpt6bp
+202.154.204.220	cxlpt7bp
+10.87.48.65	cxlpt8ap
+10.87.48.66	cxlpt8bp
+10.87.48.67	cxlpt9ap
+202.154.204.1	cxldns03
+192.168.100.49	cathaygtsm2
+10.87.49.6      cathaygctm
+10.87.48.7      cathaygtec
+10.87.49.7	cxlcs2dp
+10.87.49.9	cxlcs4dp
+10.87.50.15	db2recovery
+10.87.49.85	pre_cathaygdb2
+10.87.50.50	cxlpt6at
+10.87.50.52	cfhpt8at
+10.87.50.86	cfhpt8es
+10.87.50.87	cfhpt8fs
+10.87.49.83	pre_cfhpt5cp
+10.87.49.84	pre_cfhpt5dp
+10.87.50.151	cxlpt1as
+10.87.50.156	csr100y
+#88.8.210.21	sentinel
+192.168.103.92  CXLTPC
+10.87.49.78	cxlfnps1
+10.87.48.13	cxlcsitm
+10.87.50.80     swww.cathayrichone.com.tw
+10.87.49.68	cxlfn1dp
+10.87.49.80	cxlim1dp
+10.87.50.41	cxlim1at
+192.168.100.142 cxlsvr142
+10.87.50.79	cxlcm1bs
+
+10.87.48.47    cxlpt1dp.cathaylife.com.tw
+10.87.48.48    cxlpt1ep.cathaylife.com.tw
+10.87.48.49    cxlpt1fp.cathaylife.com.tw
+10.87.48.54    cxlpt1gp.cathaylife.com.tw
+127.0.0.1   gs.apple.com
+
+#產險
+10.176.17.148	cxitp1dp
+10.176.18.169	cxitp1ds
+10.176.18.156	cxitp01d
+10.176.18.168	cxitptsm
+10.176.18.212	cxitpa1at
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

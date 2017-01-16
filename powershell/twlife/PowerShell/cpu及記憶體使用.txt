@@ -1,0 +1,3 @@
+get-counter -Counter "\Processor(_Total)\% Processor Time" -SampleInterval 1 -MaxSamples 5
+
+Get-Counter '\Memory\Available MBytes'

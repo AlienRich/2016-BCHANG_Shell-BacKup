@@ -1,0 +1,1 @@
+[PS] C:\>Get-MailboxStatistics  -Server hq0w23076 | ft -autosize displayname,lastlogontime >c:\111.txt

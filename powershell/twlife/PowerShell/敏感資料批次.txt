@@ -1,0 +1,9 @@
+ Get-ChildItem -Path "C:\Program Files" -Include *.txt -Recurse     <-- 抓取 C:\Program Files 的 txt 檔
+
+ where {$_.lastwritetime -lt (get-date).adddays(-1)}		    <-- 抓取超過 1 天的檔案
+
+ Select-Object FullName,CreationTime 				     <--列出完整名稱+產生日期
+
+ Export-Csv e:\$FormDate.csv				            <--產生程CSV檔案
+
+ $FormDate=get-date -Format yyyyMMdd				    <--設定日期環境變數			    

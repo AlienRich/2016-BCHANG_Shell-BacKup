@@ -1,0 +1,47 @@
+#依照部門欄位
+Get-ADUser -Filter {Department -eq "資訊部"}  foreach-object {
+write-host User $_.Name -foreground green
+    Get-ADPrincipalGroupMembership $_.SamAccountName  foreach-object {
+        write-host Member Of $_.name
+    }
+}
+
+
+#依照AD樹系
+Get-ADUser -SearchBase "OU=pegavision,DC=pegavision,DC=corpnet" -Filter * | foreach-object {
+write-host "User:" $_.Name -foreground green
+    Get-ADPrincipalGroupMembership $_.SamAccountName | foreach-object {
+        write-host "Member Of:" $_.name
+    }
+}
+ 
+ #依照部門欄位
+   Get-ADUser -Filter {Department -eq "資訊部"}| foreach-object {    
+    Get-ADUser $_.samaccountName | select name
+       Get-ADPrincipalGroupMembership $_.samaccountName | select name 
+    }| export-csv c:\1.csv -encoding utf8
+  
+  #依照部門欄位  -將IP搜尋出來 
+       Get-ADUser -Filter {Department -eq "法務部"}| foreach-object {    
+    Get-ADUser $_.samaccountName | select name
+       Get-ADPrincipalGroupMembership $_.samaccountName | where-Object {$_.name -like "10.194*"} 
+    }| export-csv c:\法務部.csv -encoding utf8
+    
+    
+    #匯入AD模組
+Import-module ActiveDirectory
+
+get-adgroup -Filter {CN -like "10.194.99.242_PublicFolder_稽核室_*"} | foreach-object {    
+    Get-ADgroup $_.samaccountName | select name 
+      Get-ADgroupMember $_.samaccountName  | foreach-object {
+        write-host "      " $_.name
+       }
+    } 
+    
+    
+Get-ADUser -Filter {SamAccountName -like "P*"}| foreach-object {    
+    Get-ADUser $_.samaccountName | select name
+       Get-ADPrincipalGroupMembership $_.samaccountName | where-Object {$_.name -like "10.194*"} | foreach-object {
+        write-host "      " $_.name
+ }   }
+    
